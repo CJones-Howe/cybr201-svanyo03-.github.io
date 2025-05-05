@@ -1,0 +1,178 @@
+/* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+nav a {
+  color: #ffe81f;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffe81f;
+  color: #000;
+}
+
+header, section, footer {
+  padding: 20px;
+}
+
+header {
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header img {
+  max-width: 200px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+header h1 {
+  color: #ffe81f;
+  margin-bottom: 0;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.2em;
+}
+
+h2 {
+  color: #ffe81f;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+img.gallery {
+  width: 300px;
+  margin: 10px;
+  border: 2px solid #333;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #aaa;
+}
+
+/* Similar Movies Section */
+ul.similar-movies-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+li.similar-movie-item {
+  text-align: center;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+li.similar-movie-item:hover {
+  transform: scale(1.05);
+}
+
+li.similar-movie-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+li.similar-movie-item a {
+  color: #ffe81f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+li.similar-movie-item a:hover {
+  color: #fff;
+}
+
+/* Trivia Page Layout */
+.trivia-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.trivia-card {
+  background-color: #333;
+  color: #ffe81f;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.trivia-card:hover {
+  transform: scale(1.05);
+}
+
+/* Actors Page Layout */
+.actor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.actor-card {
+  background-color: #333;
+  border-radius: 10px;
+  color: #ffe81f;
+  text-align: center;
+  padding: 15px;
+  width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.actor-card:hover {
+  transform: scale(1.05);
+}
+
+.actor-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
